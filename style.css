@@ -1,0 +1,269 @@
+/* ====== General Styles ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ====== Header ====== */
+header {
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff4c60;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-links li {
+    margin-left: 25px;
+}
+
+header .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header .nav-links li a:hover {
+    color: #ff4c60;
+}
+
+/* ====== Hero Section ====== */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.hero-content .highlight {
+    color: #ff4c60;
+}
+
+.hero-content .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-right: 15px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ff4c60;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #e04355;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ff4c60;
+    border: 2px solid #ff4c60;
+}
+
+.btn-secondary:hover {
+    background-color: #ff4c60;
+    color: #fff;
+}
+
+/* ====== Sections ====== */
+section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #1e1e2f;
+}
+
+/* ====== About ====== */
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* ====== Skills ====== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skill-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card i {
+    font-size: 2.5rem;
+    color: #ff4c60;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* ====== Projects ====== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    margin: 15px;
+}
+
+.project-card p {
+    margin: 0 15px 15px 15px;
+    color: #555;
+}
+
+.project-card .project-link {
+    display: inline-block;
+    margin: 0 15px 15px 15px;
+    color: #ff4c60;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.project-card .project-link:hover {
+    color: #e04355;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* ====== Contact ====== */
+#contact {
+    background-color: #1e1e2f;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact-card {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-card h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.social-links a {
+    color: #ff4c60;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+/* ====== Footer ====== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+}
+
+/* ====== Responsive ====== */
+@media(max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+}
